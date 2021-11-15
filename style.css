@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-image: url(photo-1544716278-e513176f20b5.jfif); 
+   background-size: cover;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+.menu_bar{
+   background: rgb(0, 100, 0);
+   text-align: center;
+}
+
+.menu_bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #ffffff;
+}
+
+.menu_bar ul li{
+    width: 120px;
+    margin:15px;
+    padding:15px;
+}
+
+.menu_bar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.active,.menu_bar ul li:hover{
+   background: #2bab0d;
+   border-radius: 3px;
+}
+
+.menu_bar .fa{
+    margin-right: 8px;
+}
+
+.submenu1{
+    display: none;
+}
+
+.menu_bar ul li:hover .submenu1{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu_bar ul li:hover .submenu1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .submenu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu_bar ul li:hover .submenu1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu_bar ul li:hover .submenu1 ul li a:hover{
+   color: #b2ff00;
+}
+.submenu2{
+    display: none;
+}
+
+hoverme :hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgb(0,100,0);
+}
+
